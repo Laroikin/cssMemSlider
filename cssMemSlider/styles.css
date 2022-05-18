@@ -155,7 +155,7 @@ label:hover .circle {
   border: 0.2rem solid #2cb67d;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 768px) {
   .desc-wrapper {
     flex-wrap: wrap;
   }
