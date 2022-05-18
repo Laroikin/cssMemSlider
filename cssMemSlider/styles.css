@@ -13,9 +13,63 @@ body {
   align-items: center;
 }
 
-.slider .content {
-  width: 50rem;
-  height: 30rem;
-  border-radius: 0.5rem;
-  background: #7f5af0;
+.slider .wrapper {
+  overflow: hidden;
+  border-radius: 1.2vw;
+  width: 70vw;
+  height: 40vw;
+}
+
+.slider .wrapper .content {
+  display: inline-flex;
+  transition: 0.5s ease-in-out;
+}
+
+input[type="radio"]{
+  all: unset;
+}
+
+.slider .wrapper .content img {
+  margin: 0;
+  width: 70vw;
+  height: 40vw;
+  object-fit: cover;
+}
+
+#switch1:checked ~ .slider .wrapper .content {
+  margin-left: 0;
+}
+
+#switch2:checked ~ .slider .wrapper .content {
+  margin-left: -70vw;
+}
+
+#switch3:checked ~ .slider .wrapper .content {
+  margin-left: -140vw;
+}
+
+#switch4:checked ~ .slider .wrapper .content {
+  margin-left: -210vw;
+}
+
+#smth:checked ~ body {
+  background: red;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #71a5f1;
+  border: 2px solid #71a5f1;
+}
+
+label:hover .circle {
+  background-color: white;
+  border-color: white;
+}
+
+.controls {
+  display: inline-flex;
+  gap: 0.5rem;
 }
