@@ -62,6 +62,15 @@ input[type='radio'] {
   background: red;
 }
 
+label {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
 .circle {
   height: 1rem;
   width: 1rem;
@@ -72,7 +81,6 @@ input[type='radio'] {
 }
 
 label:hover .circle {
-  cursor: pointer;
   background-color: #fffffe;
   border-color: #fffffe;
 }
@@ -105,7 +113,6 @@ label:hover .circle {
   margin-right: 0.5rem;
   width: 40%;
   display: inline-flex;
-  gap: 0.5rem;
 }
 
 #switch1:checked ~ .slider .desc .text-wrapper {
@@ -149,16 +156,16 @@ label:hover .circle {
 }
 
 @media (max-width: 728px) {
-  .desc-wrapper{
+  .desc-wrapper {
     flex-wrap: wrap;
   }
-  .controls{
+  .controls {
     width: 100%;
     order: -1;
     justify-content: center;
     margin-bottom: 1rem;
   }
-  .desc{
+  .desc {
     width: 99%;
   }
 }
