@@ -65,6 +65,9 @@ input[type='radio'] {
 label {
   height: 1.5rem;
   width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 label:hover {
