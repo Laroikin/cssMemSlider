@@ -66,7 +66,7 @@ input[type='radio'] {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #7f5af0;
   border: 0.2rem solid #7f5af0;
   transition: 0.3s;
 }
@@ -126,24 +126,39 @@ label:hover .circle {
 
 #switch1:checked ~ .slider label[for='switch1'] .circle {
   cursor: default;
-  background: #2cb67d;
-  border: #2cb67d;
+  border: 0.2rem solid #2cb67d;
+  background: transparent;
 }
 
 #switch2:checked ~ .slider label[for='switch2'] .circle {
   cursor: default;
-  background: #2cb67d;
-  border: #2cb67d;
+  border: 0.2rem solid #2cb67d;
+  background: transparent;
 }
 
 #switch3:checked ~ .slider label[for='switch3'] .circle {
-  border: #2cb67d;
+  border: 0.2rem solid #2cb67d;
   cursor: default;
-  background: #2cb67d;
+  background: transparent;
 }
 
 #switch4:checked ~ .slider label[for='switch4'] .circle {
   cursor: default;
-  background: #2cb67d;
-  border: #2cb67d;
+  background-color: transparent;
+  border: 0.2rem solid #2cb67d;
+}
+
+@media (max-width: 728px) {
+  .desc-wrapper{
+    flex-wrap: wrap;
+  }
+  .controls{
+    width: 100%;
+    order: -1;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .desc{
+    width: 99%;
+  }
 }
